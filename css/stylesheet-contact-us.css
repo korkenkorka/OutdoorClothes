@@ -1,0 +1,179 @@
+body {
+	margin: 0%;
+}
+
+/* Menu */
+.menu {
+	display: grid;
+	grid-template-columns: repeat(6 , 1fr);
+	background-color: rgb(81,77,108);
+	margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.start, .news, .products, .resellers, .about-us, .contact-us {
+	text-align: center;
+	align-self: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: 'Big Shoulders Display', cursive;
+	color: rgb(220,230,251);
+	transition: color 0s, border-bottom-color 1s;
+	cursor: pointer;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(81,77,108);
+}
+
+.start:hover, .news:hover, .products:hover, .resellers:hover, .about-us:hover, .contact-us:hover {
+	color: rgb(146,166,199);
+	border-bottom-color: white;
+}
+
+.contact-us {
+    border-bottom-color: white;
+}
+
+a {
+    all: unset;
+}
+
+
+/* Pop-up menu */
+.products-pop-up {
+	display: none;
+	align-content: middle;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	grid-template-columns: repeat( auto-fit, minmax( 300px, 1fr ) );
+	grid-template-rows: max-content 300px;
+	width: 100%;
+	max-width: 100%;
+	background-color: rgb(53,59,77);
+	margin-top: 10px;
+	position: relative;
+	left: 0%;
+	position: absolute;
+}
+
+.item-pop {
+	display: grid;
+	width: 100%;
+	grid-template-rows: 50px 200px;
+	margin-bottom: 50px;
+}
+
+.products:hover .products-pop-up {
+	display: grid;
+}
+
+.item-text {
+	font-size: 20px;
+	color: white;
+	font-family: 'Fjalla One', sans-serif;
+	transition: color 0s;
+}
+
+.item-pop:hover .item-text {
+	color: rgb(255,102,0);
+}
+
+.item-img {
+	align-self: center;
+	width: 100%;
+}
+
+
+/* Header text and img */
+.header-product {
+	display: grid;
+	grid-template-rows: 125px 50px 125px;
+	background-image: url(../img/contact-us-page-background.jpg);
+	height: 300px;
+	max-width: 100%;
+	margin-bottom: 100px;
+}
+
+.header-text {
+	grid-row: 2;
+	align-self: center;
+	text-align: center;
+	font-family: 'Unica One', cursive;
+	font-size: 4vw;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0px 0px 20px black;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-text {
+        font-size: 40px;
+    }
+}
+
+
+/* Divider */
+.divider {
+    height: 200px;
+    font-family: 'Unica One', cursive;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Contact form */
+.contact-us-text {
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	word-spacing: 6px;
+	background-color: rgb(81,77,108);
+	padding-top: 25px;
+	padding-bottom: 30px;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.contact-us-form {
+	background-color: white;
+    padding: 20px;
+}
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 10px;
+}
+
+input[type=submit] {
+	background-color: rgb(81,77,108);
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: rgb(146,166,199);
+}
+
+#subject {
+	height: 200px;
+}
+
+label {
+	font-size: 18px;
+	font-family: 'Oswald', sans-serif;
+	color: rgb(47, 47, 47);
+}

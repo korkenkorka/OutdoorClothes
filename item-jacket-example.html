@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+
+		<link href="https://fonts.googleapis.com/css?family=Unica+One&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="css/stylesheet-item.css">
+
+        <link rel="shortcut icon" href="img/oc-favicon.ico"/>
+
+        <script src="scripts/scripts.js"></script>
+
+		
+		<title>
+			Item example
+		</title>
+
+	</head>
+	<body onload="get_data()">
+			<div class="menu">
+					<a href="index.html">
+						<div class="start">
+							Start
+						</div>
+					</a>
+					<a href="news.html">
+						<div class="news">
+							Nyheter
+						</div>
+					</a>
+					<div class="products">
+						Produkter
+						<div class="products-pop-up">
+							<a href="jackets.html">
+							<div class="item-pop">
+								<div class="item-text">
+									Jackor
+								</div>
+								<div class="item-img">
+									<img src="img/pop-up-item1.jpg" alt="Jacket img">
+								</div>
+							</div>
+							</a>
+		
+							<div class="item-pop">
+								<div class="item-text">
+									Byxor
+								</div>
+								<div class="item-img">
+									<img src="img/pop-up-item2.png" alt="Trousers img">
+								</div>
+							</div>
+		
+							<div class="item-pop">
+								<div class="item-text">
+									Väskor
+								</div>
+								<div class="item-img">
+									<img src="img/pop-up-item3.png" alt="Backpack img">
+								</div>
+							</div>
+							
+							<div class="item-pop">
+								<div class="item-text">
+									Västar
+								</div>
+								<div class="item-img">
+									<img src="img/pop-up-item4.png" alt="Vest">
+								</div>
+							</div>
+		
+							<div class="item-pop">
+								<div class="item-text">
+									Skor
+								</div>
+								<div class="item-img">
+									<img src="img/pop-up-item5.png" alt="Shoes">
+								</div>
+							</div>
+		
+							<div class="item-pop">
+								<div class="item-text">
+									Tält
+								</div>
+								<div class="item-img">
+									<img src="img/pop-up-item6.png" alt="Tent">
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="resellers.html">
+						<div class="resellers">
+							Återförsäljare
+						</div>
+					</a>
+					<a href="index.html#about-us-info">
+						<div class="about-us">			
+							Om oss
+						</div>
+					</a>
+					<a href="contact-us.html">
+						<div class="contact-us">
+							Kontakta oss
+						</div>
+					</a>
+                </div>
+                <div id="shopping-cart-section">
+                    <div id="shopping-cart">
+                        <div id="item-count">
+                            0 varor
+                        </div>
+                        <img id="shopping-cart-img" src="img/shopping-cart.png" alt="Shopping cart" onmouseover="hover_show_cart()" onmouseout="hover_none_show_cart()">
+                    </div>
+                    <div id="cart-box">
+                        <div id="in-cart" onmouseover="hover_show_cart()" onmouseout="hover_none_show_cart()">
+                        
+                        </div>
+                        <div id="total-sum" onmouseover="hover_show_cart()" onmouseout="hover_none_show_cart()">
+                            <h5 id="total-sum-t" onmouseover="hover_show_cart()" onmouseout="hover_none_show_cart()">
+                                sum
+                            </h5>
+                            <h6 onmouseover="hover_show_cart()" onmouseout="hover_none_show_cart()">
+                                Till kassan
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-box">
+                    <div class="coloumn-pos">
+                    <img id="example-item-img" src="img/item-example-image1.jpg" alt="Item 1 picture">
+                    <div class="picture-chooser">
+                        <img id="img-1" src="img/jackets-item1-1.png" alt="jeans jacket img 1" onmouseover="change_image('example-item-img', 'item-example-image1.jpg')">
+                        <img id="img-2" src="img/jackets-item1-2.png" alt="jeans jacket img 2" onmouseover="change_image('example-item-img', 'item-example-image2.jpg')">
+                    </div>
+                    </div>
+                    <div class="left-side-item-box">
+                        <div id="item-text">
+                            Mike Poffner Jacka 
+                        </div>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ipsa eveniet facere molestiae, odio neque minima provident hic impedit numquam.
+                        </p>
+                        <div id="price">
+                                1399.00kr
+                        </div>
+                        <div id="pop-up-select">
+                            Du måste välja storlek.
+                        </div>
+                        <select id="size-select">
+                            <option value="size" selected>Storlek</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <div id="buy-button" onclick="item_call('jackets-item1-1.png', 'jeans jacket img 1', 'Mike Poffner Jacka', '1399')">
+                            Lägg till i varukorgen
+                        </div>
+                    </div>
+                </div>
+    </body>
+</html>

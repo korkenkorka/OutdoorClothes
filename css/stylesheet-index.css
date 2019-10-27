@@ -1,0 +1,346 @@
+body {
+	margin: 0%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+/* Menu */
+.menu {
+	display: grid;
+	grid-template-columns: repeat(6 , 1fr);
+	background-color: rgb(81,77,108);
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.start, .news, .products, .resellers, .about-us, .contact-us {
+	text-align: center;
+	align-self: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: 'Big Shoulders Display', cursive;
+	color: rgb(220,230,251);
+	transition: color 0s, border-bottom-color 1s;
+	cursor: pointer;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(81,77,108);
+}
+
+.start {
+	border-bottom-color: white;
+}
+
+.start:hover, .news:hover, .products:hover, .resellers:hover, .about-us:hover, .contact-us:hover {
+	color: rgb(146,166,199);
+	border-bottom-color: white;
+}
+
+a {
+    all: unset;
+}
+
+
+/* Pop-up menu */
+.products-pop-up {
+	display: none;
+	align-content: middle;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	grid-template-columns: repeat( auto-fit, minmax( 300px, 1fr ) );
+	grid-template-rows: max-content 300px;
+	width: 100%;
+	max-width: 100%;
+	background-color: rgb(53,59,77);
+	margin-top: 10px;
+	position: relative;
+	left: 0%;
+	position: absolute;
+}
+
+.item-pop {
+	display: grid;
+	width: 100%;
+	grid-template-rows: 50px 200px;
+	margin-bottom: 50px;
+}
+
+.products:hover .products-pop-up {
+	display: grid;
+}
+
+.item-text {
+	font-size: 20px;
+	color: white;
+	font-family: 'Fjalla One', sans-serif;
+	transition: color 0s;
+}
+
+.item-pop:hover .item-text {
+	color: rgb(255,102,0);
+	cursor: pointer;
+}
+
+.item-img {
+	align-self: center;
+	width: 100%;
+}
+
+
+/* Logo img and text */
+.logo-img {
+	display: grid;
+	grid-template-rows: 325px 50px 325px;
+	background-image: url(../img/background1.jpg);
+	margin-bottom: 0px;
+}
+
+.logo-text {
+	grid-row: 2;
+	align-self: center;
+	text-align: center;
+	font-family: 'Unica One', cursive;
+	font-size: 5vw;
+	color: rgb(81,77,108);
+	font-weight: bold;
+	text-shadow: 0px 0px 20px white;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo-text {
+        font-size: 50px;
+    }
+}
+
+/* Four option menu */
+.four-option-menu {
+	display: grid;
+	grid-template-rows: repeat(2, 500px);
+	grid-template-columns: repeat(2, 50%);
+	margin-top: 0%;
+}
+
+h1 {
+	grid-row: 2;
+	text-align: center;
+	align-self: center;
+	vertical-align: middle;
+	font-size: 4vw;
+	color: white;
+	font-family: 'Fjalla One', sans-serif;
+	letter-spacing: 4px;
+	transition: color 0s;
+	word-spacing: 6px;
+	text-shadow: 0px 0px 15px black;
+}
+
+h1:hover {
+	color: rgb(255,102,0);
+	cursor: pointer;
+}
+
+.products-menu, .news-menu, .resellers-menu, .contact-us-menu {
+	display: grid;
+	grid-template-rows: 45% 10% 45%;
+}
+
+.products-menu {
+	background-position: center;
+	background-image: url(../img/products-background.jpg);
+}
+
+.news-menu {
+	background-position: center;
+	background-image: url(../img/news-background.jpg);
+}
+
+.resellers-menu {
+	background-position: center;
+	background-image: url(../img/resellers-background.jpg);
+}
+
+.contact-us-menu {
+	background-position: center;
+	background-image: url(../img/contact-us-background.jpg);
+}
+
+
+/* About us info */
+.about-us-info {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 350px 600px;
+	margin-top: 0px;
+	background-image: url(../img/about-us-background.jpg);
+}
+
+h2 {
+	padding-top: 300px;
+	text-align: center;
+	align-self: center;
+	font-size: 60px;
+	color: white;
+	font-family: 'Unica One', cursive;
+	text-decoration: overline;
+	text-decoration-color: white;
+	grid-row: 1;
+	text-shadow: 0px 0px 10px black;
+}
+
+.about-us-text {
+	margin-top: 50px;
+	text-align: center;
+	font-size: 3vw;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	margin-left: 10%;
+	margin-right: 10%;
+	grid-row: 2;
+	text-shadow: 0px 0px 10px black;
+}
+
+
+/* Contact form */
+#contact-us-tab {
+	position: absolute;
+	background-color: white;
+	height: 180px;
+	width: 50px;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-top: 50px;
+	box-shadow: 0px 0px 16px black;
+	cursor: pointer;
+}
+
+.vertical {
+	text-align: center;
+	font-family: 'Unica One', cursive;
+	font-size: 30px;
+	font-weight: bold;
+	color: rgb(47, 47, 47);
+	writing-mode: vertical-rl;
+	height: 100%;
+	background-color: white;
+}
+
+.contact-us-text {
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	word-spacing: 6px;
+	background-color: rgb(81,77,108);
+	padding-top: 25px;
+	padding-bottom: 30px;
+}
+
+#contact-us-form {
+	background-color: white;
+	padding: 20px;
+	display: none;
+	position: absolute;
+	width: 300px;
+	grid-template-columns: 300px;
+	grid-template-rows: auto;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 0px 0px 30px black;
+	left: 0%;
+	position: absolute;
+}
+
+input[type=text], select, textarea {
+	width: 300px;
+	padding: 12px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	border-radius: 5px;
+}
+
+input[type=submit] {
+	background-color: rgb(81,77,108);
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: rgb(146,166,199);
+}
+
+#subject {
+	height: 200px;
+}
+
+h3 {
+	font-size: 30px;
+	font-family: 'Unica One', cursive;
+	text-align: center;
+	text-decoration: underline;
+}
+
+label {
+	font-size: 18px;
+	font-family: 'Oswald', sans-serif;
+	color: rgb(47, 47, 47);
+}
+
+#x-button {
+	font-size: 15px;
+	margin: 0px;
+	width: 20px;
+	margin-left: 295px;
+	color: rgb(123, 123, 123);
+	text-align: center;
+	position: absolute;
+	margin-top: 70px;
+	cursor: pointer;
+	display: none;
+	transition: color 0s;
+}
+
+#x-button:hover {
+	color: black;
+}
+
+
+/* Instagram logo */
+.instagram-logo-box {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	margin-top: 30px;
+	background-color: white;
+	position: absolute;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	justify-self: right;
+}
+
+#instagram-logo-img {
+	grid-column: 2;
+	height: 40px;
+	width: 40px;
+	margin: 5px;
+}
+
+.instagram-text {
+	display: none;
+	margin: auto;
+	margin-left: 5px;
+	font-size: 18px;
+	font-family: 'Unica One', cursive;
+	text-align: center;
+	align-self: middle;
+}
+
+.instagram-logo-box:hover .instagram-text {
+	display: contents;
+}
